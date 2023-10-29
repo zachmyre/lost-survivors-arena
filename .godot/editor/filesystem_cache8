@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1698465346
+::res://::1698612133
 icon.svg::CompressedTexture2D::5571983513971973412::1698461827::1698461836::1::::<><>::
+README.md::TextFile::-1::1698467905::0::1::::<><>::
 ::res://assets/::1698465796
 ::res://assets/characters/::1698462824
 ::res://assets/characters/Fire vizard/::1698462825
@@ -76,12 +77,17 @@ Walk.png::CompressedTexture2D::5183649700932122829::1698462672::1698462825::1:::
 ::res://assets/Tilemap/::1698465796
 tilemap.png::CompressedTexture2D::5679515219080491419::1698465796::1698465796::1::::<><>::
 tilemap_packed.png::CompressedTexture2D::8626285213498745077::1698465796::1698465796::1::::<><>::
-::res://scenes/::1698465780
-::res://scenes/main/::1698465394
-main.tscn::PackedScene::3454072021336689368::1698465394::0::1::::<><>::uid://ccich5titl1vs::::res://scenes/player/player.tscn
-::res://scenes/player/::1698465394
-player.tscn::PackedScene::4929869616678737420::1698465394::0::1::::<><>::res://scenes/player/player.gd<>uid://1wvtb1afomkv::::res://assets/characters/Warrior_1/Idle.png
+::res://resources/::1698466436
+tileset.tres::TileSet::8834778332836365172::1698466436::0::1::::<><>::uid://du5vwlwvtxjcf::::res://assets/Tilemap/tilemap_packed.png
+::res://scenes/::1698466755
+::res://scenes/game_camera/::1698467431
+game_camera.gd::GDScript::-1::1698467428::0::1::::<>Camera2D<>::
+game_camera.tscn::PackedScene::337077575913930287::1698467431::0::1::::<><>::res://scenes/game_camera/game_camera.gd
+::res://scenes/main/::1698467431
+main.tscn::PackedScene::3454072021336689368::1698467431::0::1::::<><>::uid://dx4vrjw03yium::::res://resources/tileset.tres<>uid://e2jva5xeuggl::::res://scenes/game_camera/game_camera.tscn<>uid://ccich5titl1vs::::res://scenes/player/player.tscn
+::res://scenes/player/::1698467431
 player.gd::GDScript::-1::1698464575::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::4929869616678737420::1698467431::0::1::::<><>::res://scenes/player/player.gd<>uid://1wvtb1afomkv::::res://assets/characters/Warrior_1/Idle.png
 ::res://scenes/Tilemap/::1698465788
 tilemap.png::CompressedTexture2D::6196913323213787543::1698465788::1698465780::1::::<><>::
 tilemap_packed.png::CompressedTexture2D::3952458020338863826::1698465788::1698465780::1::::<><>::

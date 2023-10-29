@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://bphgcde8bhxl5"]
+[gd_scene load_steps=7 format=3 uid="uid://bphgcde8bhxl5"]
 
 [ext_resource type="TileSet" uid="uid://dx4vrjw03yium" path="res://resources/tileset.tres" id="1_6cvdj"]
 [ext_resource type="PackedScene" uid="uid://e2jva5xeuggl" path="res://scenes/game_camera/game_camera.tscn" id="1_16mkg"]
 [ext_resource type="PackedScene" uid="uid://ccich5titl1vs" path="res://scenes/player/player.tscn" id="1_jdnff"]
+[ext_resource type="Script" path="res://scenes/basic_enemy/basic_enemy.gd" id="4_1ehv0"]
+[ext_resource type="Texture2D" uid="uid://bfg2b8xu6x2kb" path="res://assets/characters/Fire vizard/Idle.png" id="4_ai6ts"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m3fcx"]
+radius = 9.0
+height = 56.0
 
 [node name="Main" type="Node"]
 
@@ -15,3 +21,15 @@ layer_0/tile_data = PackedInt32Array(786438, 0, 4, 720902, 0, 4, 655366, 65536, 
 
 [node name="Player" parent="." instance=ExtResource("1_jdnff")]
 position = Vector2(53, 60)
+
+[node name="BasicEnemy" type="CharacterBody2D" parent="."]
+script = ExtResource("4_1ehv0")
+
+[node name="Sprite2D" type="Sprite2D" parent="BasicEnemy"]
+position = Vector2(0, -4)
+texture = ExtResource("4_ai6ts")
+hframes = 9
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BasicEnemy"]
+position = Vector2(0, 30)
+shape = SubResource("CapsuleShape2D_m3fcx")
